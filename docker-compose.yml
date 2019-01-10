@@ -1,0 +1,18 @@
+version: "3.3"
+services:
+  image:
+    build: .
+    image: zobees/stationeers
+    tty: true
+    stdin_open: true
+    environment:
+      # STEAMCMD_SKIP: "true"
+      USER_UID: "1001"
+      USER_GID: "1001"
+    ports:
+      - "27500:27500"
+      - "27500:27500/udp"
+      - "27015:27015"
+      - "27015:27015/udp"
+    volumes:
+      - ./data:/data

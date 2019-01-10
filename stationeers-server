@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# _term() {
+#   stationeers-shutdown
+# }
+
+# trap _term SIGTERM
+
+./rocketstation_DedicatedServer.x86_64 \
+  -logfile /dev/stdout \
+  -autostart \
+  -batchmode \
+  -nographics \
+  -autosaveinterval=$AUTOSAVE_INTERVAL \
+  -worldtype=$WORLD_TYPE \
+  -worldname=$WORLD_NAME \
+  -loadworld=$WORLD_NAME \
+  -servername=$SERVER_NAME \
+  -autosaveinterval=$AUTOSAVE_INTERVAL &
+
+child=$!
+wait "$child"
