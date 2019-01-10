@@ -15,7 +15,7 @@
   -worldtype=$WORLD_TYPE \
   -worldname=$WORLD_NAME \
   -loadworld=$WORLD_NAME \
-  -servername=$SERVER_NAME \
+  -servername="$SERVER_NAME" \
   -autosaveinterval=$AUTOSAVE_INTERVAL &
 
 child=$!
