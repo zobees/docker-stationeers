@@ -8,7 +8,7 @@ RUN apt-get -y update && \
 ENV STEAMCMD_APP_ID="600760" \
     WORLD_NAME="stationeers" \
     WORLD_TYPE="Terrain" \
-    SERVER_NAME="A Stationeers Server" \
+    SERVER_NAME="Stationeers" \
     AUTOSAVE_INTERVAL="300"
 
 ADD stationeers-* /usr/local/bin/
