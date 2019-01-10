@@ -27,12 +27,11 @@ docker run -d -v $PWD/data:/data \
 
 The following environment variables are used to congigure the server:
 
-Variable          | Default              | Description
------------------ | -------------------- | -----------
-WORLD_NAME        | stationeers          | Specifies the name of the save directory
-WORLD_TYPE        | Terrain              | The type of world (Space, Mars or Terrain)
-SERVER_NAME       | A Stationeers Server | The visible name of the server
-AUTOSAVE_INTERVAL | 300                  | The duration between autosaves in seconds
+Variable          | Default     | Description
+----------------- | ----------- | -----------
+WORLD_NAME        | stationeers | Specifies the name of the save directory
+WORLD_TYPE        | Terrain     | The type of world (Space, Mars or Terrain)
+AUTOSAVE_INTERVAL | 300         | The duration between autosaves in seconds
 
 Note that this is a preliminary implementation and these are likely to change (and improve).
 
